@@ -39,10 +39,6 @@ g_DA = 0
 def coth(x):
     return np.cosh(x) / np.sinh(x)
 
-# Brownian spectral density
-def J_Brownian(x, Lam, Gamma, ws):
-    return 2 * Lam * Gamma * ws**2 * x / ((ws**2 - x**2)**2 + (Gamma * x)**2)
-
 # discretization
 def bathParam(ωc, alpha, ndof):     # for bath descritization
 
@@ -106,8 +102,8 @@ plt.semilogy(- w * conv, k_Marcus_out * conv, '-', linewidth = 3, color = '#4444
 plt.semilogy(- w * conv, k_Marcus_in * conv, '--', linewidth = 3, color = "#FD0000", label = 'Inside Cavity (MJ)')
 
 t, y, y_c = DFT(w_c)
-plt.semilogy(t * conv, y * conv, 'o', markersize = 10, markeredgewidth = 2, markeredgecolor = "k", markerfacecolor = 'none', label = 'Outside Cavity (FGR)')
-plt.semilogy(t * conv, y_c * conv, 'o', markersize = 6, markeredgewidth = 2, markeredgecolor = "#0385FF", markerfacecolor = '#0385FF', label = 'Inside Cavity (FGR)')
+plt.semilogy(t * conv, y * conv, 'o', markersize = 12, markeredgewidth = 2, markeredgecolor = "k", markerfacecolor = 'none', label = 'Outside Cavity (FGR)')
+plt.semilogy(t * conv, y_c * conv, 'o', markersize = 4, markeredgewidth = 2, markeredgecolor = "#0385FF", markerfacecolor = '#0385FF', label = 'Inside Cavity (FGR)')
 
 # ==============================================================================================
 #                                      plotting set up     

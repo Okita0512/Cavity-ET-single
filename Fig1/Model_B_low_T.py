@@ -123,8 +123,8 @@ plt.semilogy(- w * conv, k_Marcus_out * conv, '-', linewidth = 3, color = 'black
 plt.semilogy(- w * conv, k_Marcus_in * conv, '--', linewidth = 3, color = 'red', label = 'Inside Cavity (Marcus)', alpha = .3)
 
 t, y, y_c = DFT(w_c)
-plt.semilogy(t * conv, y * conv, 'o', markersize = 10, markeredgewidth = 2, markeredgecolor = "k", markerfacecolor = 'none', label = 'Outside Cavity (FGR)')
-plt.semilogy(t * conv, y_c * conv, 'o-', color = '#0385FF', markersize = 6, markeredgewidth = 2, markeredgecolor = "#0385FF", markerfacecolor = '#0385FF', label = 'Inside Cavity (FGR)')
+plt.semilogy(t * conv, y * conv, 'o', markersize = 12, markeredgewidth = 2, markeredgecolor = "k", markerfacecolor = 'none', label = 'Outside Cavity (FGR)')
+plt.semilogy(t * conv, y_c * conv, 'o-', color = '#0385FF', markersize = 4, markeredgewidth = 2, markeredgecolor = "#0385FF", markerfacecolor = '#0385FF', label = 'Inside Cavity (FGR)')
 
 # ==============================================================================================
 #                                      plotting set up     
